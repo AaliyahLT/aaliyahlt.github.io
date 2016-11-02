@@ -1,0 +1,31 @@
+h1, h2, p:first-letter {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: right;
+    color: orange;
+}
+
+p:first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+em {
+    color: white;
+    background-color: green;
+}
+
+div#allotment h2 {
+    color: orange;
+}
+
+div#warehouse h2 {
+    color: blue;
+}
+
+ul < li {
+    font-weight: bold;
+}
