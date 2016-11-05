@@ -46,14 +46,18 @@ ol.vegetables-list li {
     color: green;
 }
 
+td {
+    text-align: center;
+}
+
 tbody tr td {
     color: white;
     background-color: green;
-    text-align: center;
 }
 
 tbody tr td:nth-child(4n+1) {
     color: orange;
     border-color: black;
     background: none;
+    text-align: left;
 }
