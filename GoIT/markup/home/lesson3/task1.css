@@ -1,5 +1,9 @@
-h1, h2, p:first-letter {
+* {
     font-weight: bold;
+}
+
+p {
+    font-weight: normal;
 }
 
 h1 {
@@ -26,6 +30,30 @@ div#warehouse h2 {
     color: blue;
 }
 
-ul < li {
-    font-weight: bold;
+ol li {
+    font-weight: normal;
+}
+
+#allotment ol.fruits-list li {
+    color: grey;
+}
+
+ol.vegetables-list li {
+    color: red;
+}
+
+#warehouse ol.fruits-list li {
+    color: green;
+}
+
+tbody tr td {
+    color: white;
+    background-color: green;
+    text-align: center;
+}
+
+tbody tr td:nth-child(4n+1) {
+    color: orange;
+    border-color: black;
+    background: none;
 }
