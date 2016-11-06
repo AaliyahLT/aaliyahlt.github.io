@@ -55,7 +55,13 @@ tbody tr td {
     background-color: green;
 }
 
-tbody tr td:nth-child(4n+1) {
+/*tbody tr td:nth-child(4n+1) {
+    color: orange;
+    border-color: black;
+    background: none;
+    text-align: left;
+}*/
+tbody tr td:first-child {
     color: orange;
     border-color: black;
     background: none;
