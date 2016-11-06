@@ -6,6 +6,8 @@ a[href*="google"]:link {
     color: #666;
 }
 
+a[target="_blank"]:after {
     content: " ⇱";
+
 }
 
