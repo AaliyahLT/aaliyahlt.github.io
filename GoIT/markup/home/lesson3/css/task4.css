@@ -1,0 +1,11 @@
+a[href^="http"]:link {
+    color: #f70;
+}
+
+a[href*="google"]:link {
+    color: #666;
+}
+
+    content: " ⇱";
+}
+
