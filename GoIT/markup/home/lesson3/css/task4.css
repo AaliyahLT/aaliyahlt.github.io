@@ -1,13 +1,19 @@
-a[href^="http"]:link {
+a[href^="http"]:link, a[href^="http"]:visited {
     color: #f70;
 }
 
-a[href*="google"]:link {
+a[href*="google"]:link, a[href*="google"]:visited {
     color: #666;
 }
 
-a[target="_blank"]:after {
-    content: " ⇱";
-
+:hover {
+    text-decoration: none;
 }
 
+[target="_blank"]:after {
+    margin-left: 7px;
+    display: inline-block;
+    content: "\21F1";
+    transform: rotate(90deg);
+    vertical-align: -20%;
+}
