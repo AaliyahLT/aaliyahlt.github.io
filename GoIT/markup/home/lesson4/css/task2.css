@@ -1,0 +1,36 @@
+.navigation {
+    width: 900px;
+    background-color: blueviolet;
+    font: normal 18px Impact;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+}
+
+/*.clear {
+    clear: both;
+}*/
+
+ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+li a:hover {
+    color: #666666;
+    background-color: #cccccc;
+}
+
+.more {
+    float: right;
+}
