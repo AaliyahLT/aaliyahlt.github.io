@@ -1,36 +1,41 @@
 .navigation {
-    width: 900px;
     background-color: blueviolet;
     font: normal 18px Impact;
     margin: 0 auto;
 }
 
 ul {
+    width: 900px;
+    height: 43px;
+    background-color: blueviolet;
     margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
 ul li {
-    list-style: none;
-    float: left;
+    padding: 10px 0;
+    /*display: inline-block;*/
+    float: left; /*это свойство делает элементы блочными т.е. как display="block"*/
 }
 
-/*.clear {
-    clear: both;
-}*/
-
 ul li a {
-    display: inline-block;
     text-decoration: none;
-    color: white;
     padding: 10px 15px;
+    color: white;
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
 }
 
 li a:hover {
-    color: #666666;
+    color: #666;
     background-color: #cccccc;
 }
 
 .more {
     float: right;
+}
+
+.clearFl {
+    clear: right;
 }
