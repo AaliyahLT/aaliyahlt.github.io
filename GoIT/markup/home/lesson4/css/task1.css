@@ -1,11 +1,12 @@
-div {
-    width: 900px;
+.nav {
     background-color: blueviolet;
     font: normal 18px Impact;
     margin: 0 auto;
 }
 
-ul {
+.menu {
+    width: 900px;
+    height: 43px;
     margin: 0;
 }
 
