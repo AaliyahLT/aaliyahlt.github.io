@@ -1,0 +1,34 @@
+#wrap {
+    width: 1083px;
+    margin: 0 auto;
+}
+
+#header {
+    /*width: 100%;*/
+    /*height: 641px;*/
+    /*background: #ccd2ca;*/
+    background-image: url(../img/head_bg_01.png);
+    margin-bottom: 1px;
+}
+
+#container {
+    /*width: 100%;*/
+    /*height: 664px;*/
+    padding: 52px 72px 0;
+    background-color: azure;
+    border-top: 11px solid #f2f2f2;
+}
+
+.content {
+    background: #33f7d5;
+    margin-right: 312px;
+    width: 617px;
+    /*height: 653px;*/
+}
+
+#sidebar {
+    float: right;
+    background-color: darkorchid;
+    height: 653px;
+    width: 312px;
+}
