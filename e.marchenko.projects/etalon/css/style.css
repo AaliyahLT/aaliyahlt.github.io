@@ -20,7 +20,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 13px;
     color: #717070;
 }
 
@@ -28,5 +28,23 @@ a {
     text-decoration: none;
     outline: none;
     color: #717070;
+    font-size: 13px;
 }
 
+a:hover {
+    text-decoration: underline;
+    outline: none;
+    color: #2b2c2b;
+    font-size: 13px;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+    color: #000;
+}
+
+blockquote {
+    font-style: italic;
+    background: #ccc;
+    margin-left: 20px;
+}
