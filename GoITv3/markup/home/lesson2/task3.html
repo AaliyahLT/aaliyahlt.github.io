@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 2. Home Task 3</title>
+</head>
+<body>
+<form action="#">
+    <label for="fname">Name</label>
+    <br/>
+    <input type="text" name="firstname" id="fname"><br/><br/>
+
+    <label for="email">Email</label>
+    <br/>
+    <input type="text" name="email" id="email"><br/><br/>
+
+    <span>Sex</span><br/>
+    <input type="radio" name="sex" value="male"/>Male
+    <input type="radio" name="sex" value="female" />Female
+    <br/><br/>
+
+    <span>Current status</span><br/>
+    <input type="checkbox" name="curStatus" value="student">Student
+    <br/>
+    <input type="checkbox" name="curStatus" value="employed">Employed
+    <br/>
+    <input type="checkbox" name="curStatus" value="unemployed">Unemployed
+    <br/><br/>
+
+    <span>Month and Year of birth</span><br/>
+    <select name="month">
+        <option value="january">January</option>
+        <option value="april">April</option>
+        <option value="june">June</option>
+        <option value="september">September</option>
+    </select>
+    <select name="year">
+        <option value="1980">1980</option>
+        <option value="1990">1990</option>
+        <option value="2000">2000</option>
+    </select>
+    <br/><br/>
+
+    <span>Skills and Technologies</span><br/>
+    <select name="SkillsAndTechno" size="10" multiple>
+        <optgroup label="Tech skills">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="git">Git</option>
+        </optgroup>
+        <optgroup label="Soft skills">
+            <option value="timemng">Time management</option>
+            <option value="proactiv">Proactivity</option>
+            <option value="teamwork">Teamwork</option>
+            <option value="leader">Leadership</option>
+        </optgroup>
+    </select>
+    <br/><br/>
+    <span>Photo</span><br/>
+    <input type="file">
+    <br/><br/>
+    <label for="comment">Comments</label><br/>
+    <textarea id="comment" name="comments"></textarea>
+    <br/><br/>
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>
