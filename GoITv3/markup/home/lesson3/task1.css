@@ -1,6 +1,5 @@
 h1 {
     text-align: right;
-    color: orange;
 }
 
 p:first-letter {
@@ -19,7 +18,7 @@ em {
     background-color: green;
 }
 
-#allotment h2 {
+h1, #allotment h2, tbody td:first-child {
     color: orange;
 }
 
@@ -27,9 +26,34 @@ em {
     color: blue;
 }
 
-li {
+li, .students-table {
     font-weight: bold;
 }
 
+ol li{
+    font-weight: normal;
+}
+#allotment .fruits-list li {
+    color: grey;
+}
 
+#warehouse .fruits-list li {
+    color: green;
+}
 
+.vegetables-list li {
+    color: red;
+}
+
+.students-table {
+    text-align: center;
+}
+
+tbody td:first-child {
+    text-align: left;
+}
+
+tbody td:not(:first-child) {
+    background-color: green;
+    color: white;
+}
