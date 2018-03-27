@@ -1,6 +1,6 @@
 input[type="checkbox"]
 {
-    adisplay: none;
+    display: none;
 }
 
 label[for="red"],
@@ -26,13 +26,27 @@ label[for="blue"]
     color: blue;
 }
 
-.red
+.red, .green, .blue
 {
     display: inline-block;
-    background-color: red;
     color: white;
     padding: 0 5px 0 5px;
     border-radius: 7px;
+}
+
+.red
+{
+    background-color: red;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.blue
+{
+    background-color: blue;
 }
 
 #red:checked ~ label[for="red"],
@@ -42,17 +56,9 @@ label[for="blue"]
     opacity: 0.5;
 }
 
-#red:checked .red
+#red:checked ~ .red,
+#green:checked ~ .green,
+#blue:checked ~ .blue
 {
-
-}
-
-#green:checked .green
-{
-
-}
-
-#blue:checked .blue
-{
-
+    display: none;
 }
