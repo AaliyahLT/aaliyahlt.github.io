@@ -1,0 +1,41 @@
+.pager-container {
+    width: 100%;
+    font: normal 10px Tahoma;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.pager-container a {
+    text-decoration: none;
+    color: #a41eee;
+}
+
+.pager-number {
+    margin: 0 2px;
+    padding: 5px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.pager-fast-item,
+.pager-dots-item
+{
+    margin: 0 5px;
+}
+
+a.pager-number:active,
+a.pager-number:hover
+{
+    color: white;
+    background-color: #a41eee;
+    border: 1px solid #6b009e;
+}
+
+a.pager-dots-item:hover,
+a.pager-fast-item:hover,
+a.pager-fast-item:active,
+a.pager-dots-item:active
+{
+    font-weight: bold;
+}
