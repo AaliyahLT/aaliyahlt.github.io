@@ -1,0 +1,46 @@
+.green,
+.gray,
+.red,
+.blue
+{
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+
+    background: #ccc;
+}
+
+.blue
+{
+    left: 20px;
+    top: -40px;
+    background: blue;
+}
+
+/*
+    даже со значением 100 невозможно перекрыть
+    блок вне родителя с 1
+*/
+.green
+{
+    z-index: 100;
+    left: 50px;
+    top: 50px;
+    background: green;
+}
+
+.red
+{
+    z-index: 101;
+    left: 70px;
+    top: -70px;
+    background: red;
+}
+/*
+    но если родительскому блоку сделать z-index
+    больше 1, то дочерние блоки уже перекроют блок
+    вне родителя с 1
+*/
+
+/*.gray {z-index: 2;}*/
