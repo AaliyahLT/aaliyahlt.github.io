@@ -1,0 +1,38 @@
+body
+{
+    font-size: 21px;
+}
+
+td { padding: 5px 10px;}
+
+/*
+    table-layout: auto
+        ширина ячеек определяется контентом.
+        Если его больше, чем заданная ширина ячейки,
+        ячейки и потом таблица расширяются
+        => width, height = min-width, min-height
+
+    table-layout: fixed
+        контент может выпрыгнуть из ячеек таблицы
+        его можно скрыть по overflow
+*/
+
+.t1
+{
+    table-layout: fixed;
+}
+
+.t1,
+.t2
+{
+    width: 20em;
+    white-space: nowrap;
+
+    border: 2px solid black;
+}
+
+.t1 td:first-child,
+.t2 td:first-child
+{
+    border: 2px solid red;
+}
