@@ -1,0 +1,11 @@
+body { background: #eeeecc;}
+div {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    border: 3px solid red;
+    background: yellow;
+
+    /*top, right, bottom, left*/
+    clip: rect(3px,19px,auto,3px); /*После чего становится доступен background. Клиппинг не об обрезании картинок. Бывает полезно при верстке, когда надо что-то подрезать.*/
+}

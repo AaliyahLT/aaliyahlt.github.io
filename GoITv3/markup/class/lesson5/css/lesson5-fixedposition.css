@@ -1,0 +1,33 @@
+.parent {
+    font-size: 34px;
+    border: 1px solid #000;
+    background: #eef;
+    height: 400px;
+    width: 500px;
+    margin: 20px;
+    position: relative;
+
+}
+
+.child {
+    position: static;
+    border: 1px dotted #a00;
+}
+
+.abs {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+
+    background: #ee5;
+    border: 1px dashed #a00;
+}
+
+.fix {
+    position: fixed;
+    left: 300px;
+    bottom: 0;
+
+    background: #e5e;
+    border: 1px dashed #a00;
+}

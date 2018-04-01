@@ -1,0 +1,94 @@
+body {
+    font-size: 24px;
+}
+
+.parent {
+    position: relative;
+
+    height: 50px;
+    -padding: 20px;
+
+    background: #ccc;
+}
+
+/* TIPS-1
+  можно применять все 4 смещения
+  и если у блока нет ширины, то он
+  растянется так как указано в смещении
+*/
+
+.position1 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background: red;
+}
+
+.position1.inner {
+    background: green;
+}
+
+.holder {
+    position: relative;
+
+    height: 150px;
+    padding: 20px;
+
+    background: #eec;
+    border: 10px solid #009;
+}
+
+/*
+    попробуем применить к картинке
+*/
+.position2 {
+    position: absolute;
+    /*В каком бы порядке не шли свойства,
+    выигрывают всегда left и top
+
+    картинка не растягивается потому,
+    что у нее есть размеры
+
+    заменим на div - та же история
+
+    обратите внимание, что элементы
+    позиционируются по краю padding -
+    там, где начинается border
+*/
+    right: 0;
+    bottom:0;
+    left: 0;
+    top: 0;
+}
+
+.position3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+
+    /*
+        теперь магия:
+        добавим к этому auto отступы
+
+        играть с ними можно как угодно
+    */
+    margin: auto 0; /*чтобы отцентрировать блок с заданными размерами по вертикали, необходимо задать bottom, left и top равными нулю. Блок прижимается к левому краю родителя*/
+
+    -right: 0;
+    bottom:0;
+    left: 0;
+    top: 0;
+
+    /*
+    чтобы отцентрировать блок с заданными размерами по вертикали и горизонтали, необходимо задать
+    margin: auto;
+    right: 0;
+    bottom:0;
+    left: 0;
+    top: 0;
+    */
+}
