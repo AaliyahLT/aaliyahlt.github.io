@@ -1,0 +1,55 @@
+.table
+{
+    display: table;
+    font-family: Arial;
+    font-size: 20px;
+    border: 2px solid #999;
+}
+
+.caption
+{
+    display: table-caption;
+    caption-side: bottom;
+    background: #318ba3;
+    color: #fff;
+    padding: 5px;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.thead
+{
+    display: table-header-group;
+    background: #bbe774;
+}
+
+.tbody
+{
+    display: table-row-group;
+    background: #e6f1f3;
+}
+
+.tfoot
+{
+    display: table-footer-group;
+    background: #ecfbd4;
+}
+
+.thead,
+.tbody,
+.tfoot
+{
+    font-style: italic;
+}
+
+.tr
+{
+    display: table-row;
+}
+
+.th,
+.td
+{
+    display: table-cell;
+    padding: 8px 15px;
+}
