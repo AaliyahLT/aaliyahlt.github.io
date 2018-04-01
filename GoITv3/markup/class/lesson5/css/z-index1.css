@@ -1,0 +1,15 @@
+div {
+    width: 200px;
+    height: 200px;
+
+    background: #ccc;
+}
+
+div img {
+    /*
+        применяется к позиционированным элементам
+    */
+    position: relative;
+    left: 180px;
+    z-index: -1;
+}
