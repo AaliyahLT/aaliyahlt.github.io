@@ -1,0 +1,24 @@
+/*
+    повседневные задачи
+*/
+.overflow {
+    overflow: hidden;
+
+    width: 50%;
+    height: 100px;
+
+    margin-bottom: 50px;
+
+    background: #ccc;
+}
+
+.overflow-text {
+    font-size: 25px;
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis; /*когда необходимо обрезать
+    длинный текст, который может не влезть. Работает только с overflow: hidden*/
+
+    background: #ccc;
+}
