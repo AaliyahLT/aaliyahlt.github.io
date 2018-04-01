@@ -1,0 +1,63 @@
+/* общий контейнер*/
+table
+{
+    font-family: Arial;
+    font-size: 20px;
+    border: 2px solid #999;
+}
+
+/*
+    блочный элемент, не рендерится вне таблицы,
+    при этом наследует наследуемые свойства,
+    см font-family: Arial;
+*/
+caption
+{
+/*
+    вне зависимости от расположения в HTML
+    рендерится снизу или сверху
+*/
+    caption-side: bottom;
+    background: #318ba3;
+    padding: 5px;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+/*анонимный элемент колонки*/
+col:first-of-type
+{
+    background: #e7eef4;
+}
+
+/*
+    дополнительные семантической обертки
+    однако thead всегда рендерится первой,
+    а tfoot последней вне зависимости
+    от порядка в HTML
+*/
+thead,
+tbody,
+tfoot
+{
+    font-style: italic;
+}
+
+/*строка, содержит только td или th*/
+tbody tr
+{
+    background: #ecfad6;
+}
+
+/*ячейки обычного типа и заголовки*/
+th,
+td
+{
+    padding: 8px 15px;
+    text-transform: capitalize;
+}
+
+tbody td:first-child
+{
+    background: #bbe774;
+}
