@@ -1,0 +1,22 @@
+ul {
+    font-size: 20px;
+    list-style: none;
+}
+
+li {
+    background: #eee;
+    display: inline-block;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.chosen {
+    /*элемент перестает отображаться, но место,
+    которое он занимал остается*/
+    -visibility: hidden;
+
+    /*элемент перестает отображаться и занимать
+    свое пространство*/
+    -display: none;
+}
