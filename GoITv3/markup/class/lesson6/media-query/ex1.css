@@ -1,0 +1,41 @@
+body {
+    font-size: 45px;
+}
+
+div {
+    color: red;
+}
+
+/*
+    Медиавыражения состоят из определения медиа-типа:
+    print | screen | all (default) |
+    screen, print
+
+    и собственно выражения, в котором используются
+    лонические операторы and, only, not и ',' (or)
+ */
+
+/* all and - по-умолчанию, можно убрать */
+@media all and (max-width: 900px) {
+    div {
+        color: green;
+    }
+}
+
+/*  Хитро ведет себя not
+    он изменяет результат всего выражения,
+     пока не встретит ',' -- or
+
+     @media not screen and (color),
+        print and (color)
+
+     эквивалент
+     @media (not (screen and (color))),
+        print and (color)
+*/
+
+@media not all and (max-width: 900px){
+    div {
+        text-decoration: underline;
+    }
+}

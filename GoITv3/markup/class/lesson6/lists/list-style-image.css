@@ -1,0 +1,34 @@
+/*
+    Свой список с длинными тире или иконками
+    или другими "булетами" делают через
+    псевдоэлементы before и after
+    и позиционируют их
+*/
+body {
+    font-size: 21px;
+    padding: 40px;
+}
+
+ul,
+ol 
+{
+    list-style: none;   
+    -position: relative;
+}
+
+ol li:before {
+    position: absolute;
+    margin-left: -1.4em;
+
+    content: '-';
+}
+
+ul li:before {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    
+    margin-left: -1.4em;
+    background: url("http://lorempixel.com/14/14/") 0 0 no-repeat;
+    content: '';
+}

@@ -1,0 +1,23 @@
+.grid {
+    /* As of August 2012, only supported in Chrome 21+ */
+    display: -webkit-flex;
+    display: flex;
+}
+
+.col {
+    background: #ccc;
+    padding: 30px;
+}
+
+.fluid1 {
+    flex: 1;
+}
+
+.fixed {
+    background: red;
+    width: 200px;
+}
+
+.fluid2 {
+    flex: 3;
+}

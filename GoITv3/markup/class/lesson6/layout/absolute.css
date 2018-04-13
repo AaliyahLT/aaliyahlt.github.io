@@ -1,0 +1,33 @@
+body {
+    font-size: 29px;
+}
+
+.container {
+    position: relative;
+    min-width: 900px;
+    background: red;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16%;
+    margin-left: 2%;
+}
+
+.center {
+    /* если контента в РОА колонках будет больше,
+       то он вылезет
+     */
+    min-height: 5em;
+    padding: 0 26% 0 18%;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24%;
+    margin-right: 2%;
+}

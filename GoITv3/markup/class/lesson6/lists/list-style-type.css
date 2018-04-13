@@ -1,0 +1,24 @@
+body {
+    font-size: 21px;
+    padding: 40px;
+}
+
+ul,
+ol
+{
+    margin: 0;
+    -padding: 0;
+
+    /*любой тип можно выставить и ul  и ol*/
+    -list-style-type: disc; /* circle|square|none */
+    /*символы внутри или снаружи*/
+    list-style-position: inside;
+    /* при инсайд - текст 2й строки под маркером*/
+    -width: 30px;
+}
+
+/* можно задать всему списку или элементу*/
+ul > li:last-child {
+    list-style-type: square;
+}
+

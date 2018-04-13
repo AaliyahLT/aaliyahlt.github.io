@@ -1,0 +1,62 @@
+body {
+    font-size: 29px;
+}
+
+.container {
+    background: red;
+}
+
+.container:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.left,
+.center,
+.right {
+    float: left;
+    background: yellow;
+}
+
+.left {
+    width: 16%;
+    margin-left: 2%;
+}
+
+.center {
+    width: 56%;
+}
+
+.right {
+    width: 24%;
+}
+
+@media (max-width: 800px) {
+    .right {
+        float: none;
+        clear: both;
+        width: auto;
+        color: #fff;
+        background: green;
+    }
+    .left,
+    .center {
+        color: #fff;
+        background: #000;
+        width: 46%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 0 2%;
+    }
+    .left,
+    .center,
+    .right {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+}

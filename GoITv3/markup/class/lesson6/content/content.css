@@ -1,0 +1,8 @@
+body { font-size: 29px;}
+
+div {
+    width: 250px;
+    background: #ffa;
+}
+
+div:before { content: attr(data-mydata) " @@@ " " ### ";}

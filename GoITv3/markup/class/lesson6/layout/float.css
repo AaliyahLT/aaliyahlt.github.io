@@ -1,0 +1,34 @@
+body {
+    font-size: 29px;
+}
+
+.container {
+    min-width: 900px;
+    background: red;
+}
+
+.container:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.left,
+.center,
+.right {
+    float: left;
+}
+
+.left {
+    width: 16%;
+    margin-left: 2%;
+}
+
+.center {
+    width: 56%;
+}
+
+.right {
+    width: 24%;
+    margin-right: 2%;
+}
