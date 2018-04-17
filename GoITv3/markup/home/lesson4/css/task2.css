@@ -15,6 +15,7 @@
 .menu-list li{
     display: inline-block;
     padding: 5px 0;
+    text-transform: uppercase;
 }
 
 .menu-list li a {
