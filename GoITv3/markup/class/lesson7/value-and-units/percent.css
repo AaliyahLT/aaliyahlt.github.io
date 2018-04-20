@@ -1,0 +1,51 @@
+/* процентные значения берутся как правило от родителя */
+
+html,
+body {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    background: black;
+}
+
+.wraper,
+.inner {
+    width: 50%;
+    height: 40%;
+    background: red;
+}
+
+.inner {
+    background: yellow;
+}
+
+/* что позволяет делать хитрости */
+
+.inner {
+    position: relative;
+    left: -25%;
+    margin-left: 50%;
+}
+
+/* при этом это могут быть и координаты */
+
+.main {
+    background: #000 url("http://lorempixel.com/500/501/") 50% 50%
+    /* ^^^ счет от центра картинки */
+    no-repeat;
+}
+
+/* или размер шрифта, он наследуется от родителя
+    например,
+
+    body
+    {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 200% = 16*2
+    }
+*/

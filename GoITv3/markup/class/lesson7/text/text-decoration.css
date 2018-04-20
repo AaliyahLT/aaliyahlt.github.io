@@ -1,0 +1,22 @@
+/*
+	Note: The "blink" value is not supported in IE, Chrome, or Safari.
+	И это хорошо! :)
+*/
+
+body {
+    font-size: 26px;
+    text-decoration: underline overline line-through blink;
+}
+
+/* свойство не наследуется, поэтому color не покрасил линии */
+
+body span {
+    color: red;
+    text-decoration: none;
+    /* не отключишь */
+
+    text-decoration: overline;
+    /* не окрашивает */
+
+    text-decoration: underline overline line-through blink;
+}

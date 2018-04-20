@@ -1,0 +1,57 @@
+.wrapper {
+    padding-left: 4em;
+    text-align: right;
+}
+
+.wrapper p {
+    /* блочные элементы не выравниваются,
+        но наследуют выравнивание для своих строк
+        и строчных элементов внутри
+    */
+    /*display: inline-block;*/
+
+    width: 60%;
+}
+
+.grid {
+    text-align: justify;
+}
+
+.grid div {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px 20px 0 0;
+    background: #fff;
+    text-align: justify;
+    vertical-align: top;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+/*
+    нужно для того,
+    чтобы последня строка
+    тоже растягивалась
+*/
+
+.grid:after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+}
+
+/* еще техника, не зависит от той, что описана выще */
+
+div.p {
+    /*
+        уберите display:none
+
+        мы добиваем содержимое .grid
+        невидимыми блоками, по ширине равными
+        основным, таким образом формируя сетку
+        выравнивания
+    */
+
+    -display: none;
+    padding: 0 10px;
+}

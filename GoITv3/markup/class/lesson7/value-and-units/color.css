@@ -1,0 +1,14 @@
+div {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.item1 { background: red;}
+.item2 { background: rgb(255, 0, 0);}
+.item3 { background: rgb(100%,0%,0%);}
+.item4 { background: rgba(255,255,0,0.2);}
+.item5 { background: hsl(10,50%,20%);}
+.item6 { background: hsla(2,200%,0%,0.2);}
+.item7 { background: #ff00ff;}
+.item8 { background: #f0f;}

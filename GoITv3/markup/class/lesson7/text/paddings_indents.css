@@ -1,0 +1,25 @@
+.wrapper {
+    padding-left: 4em;
+}
+
+.wrapper p {
+    -text-indent: 3em;
+}
+
+.wrapper .start-quote {
+    text-indent: -0.5em;
+}
+
+.wrapper ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wrapper li {
+    text-indent: -1.4em;
+}
+
+.wrapper li:before {
+    content: "—";
+    margin-right: 0.4em;
+}

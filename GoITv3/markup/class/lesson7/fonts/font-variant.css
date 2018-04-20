@@ -1,0 +1,15 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 100;
+    font-size: 5em;
+}
+
+span {
+    /* Капитель
+        Основной набор - прописные (заглавные) бкувы
+        высотой строчной буквы (обычной)
+    */
+
+    -font-variant: small-caps;
+    text-transform: full-width;
+}

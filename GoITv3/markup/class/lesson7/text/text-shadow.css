@@ -1,0 +1,19 @@
+/*
+	0       0 	    0	    color
+	left	top	    blur	#/rgba...
+*/
+
+body {
+    padding: 30px;
+    font-size: 31px;
+
+    background: #666;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* чтобы сделать текст размытым, сделать цвет прозрачным, а тень текста не смещать и размыть */
+.title {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 5px #555;
+}

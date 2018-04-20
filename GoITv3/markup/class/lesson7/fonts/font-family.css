@@ -1,0 +1,17 @@
+body {
+    /* font-family != font.ttf,
+        но может состоять из одного шрифта
+
+        не забывать про кавычки,
+        если есть пробел в названии
+    */
+    font-family: Helvetica, sans-serif;
+
+    /* подразумевается, что шрифт
+        HelveticaBold существует
+    */
+    font-weight: bold;
+    /* font-weight: 100;
+        400 = normal
+    */
+}

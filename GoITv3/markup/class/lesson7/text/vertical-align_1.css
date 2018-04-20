@@ -1,0 +1,27 @@
+/*
+    default line-height ~= font-size родителя * 1.2
+ */
+
+body {
+    font-size: 21px;
+}
+
+.wrapper {
+    line-height: 21px;
+}
+
+.wrapper p {
+    /* line-height наследуется */
+    font-size: 51px;
+}
+
+.wrapper p span {
+    /* переопределяем */
+
+    line-height: 185px;
+    /* влияем на высоту строки,
+    играемся с выравниванием*/
+
+    vertical-align: middle;
+    color: red;
+}

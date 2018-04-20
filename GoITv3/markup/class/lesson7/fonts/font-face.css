@@ -1,0 +1,13 @@
+/* https://www.google.com/fonts */
+
+@font-face {
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Oleo Script'), local('OleoScript-Regular'), url('http://themes.googleusercontent.com/static/fonts/oleoscript/v1/_weQNDK6Uf40CiGFKBBUjrrIa-7acMAeDBVuclsi6Gc.woff') format('woff');
+}
+
+body {
+    font: 30px 'Oleo Script', sans-serif;
+}
+
