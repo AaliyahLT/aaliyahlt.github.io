@@ -1,0 +1,76 @@
+.sivtsev {
+    font-family: Arial, sans-serif;
+    width: 200px;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 1.5px #555;
+    text-align: justify;
+}
+/* поддержка браузерами плохая*/
+/*.sivtsev p {
+    text-align-last: justify;
+}*/
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.sivtsev p:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.sight01 {
+    font-size: 48px;
+}
+
+.sight02 {
+    font-size: 42px;
+}
+
+.sight03 {
+    font-size: 38px;
+}
+
+.sight04 {
+    font-size: 32px;
+}
+
+.sight05 {
+    font-size: 28px;
+}
+
+.sight06 {
+    font-size: 22px;
+}
+
+.sight07 {
+    font-size: 18px;
+}
+
+.sight08 {
+    font-size: 14px;
+}
+
+.sight09 {
+    font-size: 11px;
+}
+
+.sight10 {
+    font-size: 8px;
+}
+
+.sight15 {
+    font-size: 5px;
+}
+
+.sight20 {
+    font-size: 4px;
+}
+
+.uline {
+    border: 1px solid #fcc;
+    margin: 0 0 10px;
+}
