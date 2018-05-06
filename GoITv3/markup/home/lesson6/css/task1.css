@@ -6,14 +6,14 @@ span, li, a {
     display: block;
 }
 
-h1 {
+.section_title {
     font-size: 34px;
     color: #41525c;
 }
 
-.container__standard,
-.container__best-value,
-.container__ultimate {
+.pricing__container_standard,
+.pricing__container_best-value,
+.pricing__container_ultimate {
     width: 296px;
     margin: 0 auto;
     border: 1px solid #e8eaec;
@@ -22,74 +22,74 @@ h1 {
     display: inline-block;
 }
 
-.container__standard {
+.pricing__container_standard {
     left: 9px;
 }
 
-.container__ultimate {
+.pricing__container_ultimate {
     right: 9px;
 }
 
-.container__best-value {
+.pricing__container_best-value {
     box-shadow: 0 0 3px 2px #cbe2ef;
     border: 4px solid #ec8136;
     z-index: 2;
     padding-bottom: 10px;
 }
 
-.container__standard,
-.container__best-value,
-.container__ultimate,
-a
+.pricing__container_standard,
+.pricing__container_best-value,
+.pricing__container_ultimate,
+a[class^="enroll"]
 {
     border-radius: 3px;
 }
 
-.header, a {
+.pricing__header, a {
     color: white;
 }
 
-.header {
+.pricing__header {
     padding: 20px 0;
 }
 
-.container__best-value .header {
+.pricing__container_best-value .pricing__header {
     padding: 25px 0;
 }
 
-.container__standard .header,
-.container__ultimate .header {
+.pricing__container_standard .pricing__header,
+.pricing__container_ultimate .pricing__header {
     border-radius: 3px 3px 0 0;
 }
 
-.container__standard .header {
+.pricing__container_standard .pricing__header {
     background: #37c2d3;
 }
 
-.container__best-value .header {
+.pricing__container_best-value .pricing__header {
     background: #ec8136;
 }
 
-.container__ultimate .header {
+.pricing__container_ultimate .pricing__header {
     background: #1cb79a;
 }
 
-.header span,
-.iconic
+.pricing__header span,
+.pricing__content_iconic
 {
     font-size: 30px;
 }
 
-.content {
+.pricing__content {
     padding: 20px 14px;
 }
 
-.iconic {
+.pricing__content_iconic {
     color: #3f4042;
     margin-bottom: 20px;
 }
 
-.price {
+.pricing__content_price {
     color: #35495a;
     font-size: 96px;
     margin-bottom: 20px;
@@ -97,7 +97,7 @@ a
     left: -10%;
 }
 
-.price:before {
+.pricing__content_price:before {
     content: "$";
     font-size: 48px;
     position: absolute;
@@ -105,7 +105,7 @@ a
     margin-left: -30px;
 }
 
-.price:after {
+.pricing__content_price:after {
     content: "Monthly";
     font-size: 24px;
     position: absolute;
@@ -148,7 +148,8 @@ li:before {
     height: 15px;
 }
 
-a {
+.enroll-blue,
+.enroll-orange {
     width: 252px;
     margin: 0 auto;
     padding: 14px 0;
@@ -161,7 +162,7 @@ a {
     box-shadow: 0 2px 1px 0 #16436a;
 }
 
-.container__best-value a {
+.pricing__container_best-value a {
     background: #ec8136;
     box-shadow: 0 2px 1px 0 #b1561b;
 }
@@ -170,8 +171,8 @@ a:hover, a:active {
     cursor: hand;
 }
 
-.container__best-value a:hover,
-.container__best-value a:active
+.pricing__container_best-value a:hover,
+.pricing__container_best-value a:active
 {
     box-shadow: inset 0 0 3px 2px #b1561b;
     background: rgba(236,129,54,0.9);
