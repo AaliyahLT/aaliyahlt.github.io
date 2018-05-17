@@ -2,7 +2,7 @@ body {
     text-align: center;
     font-family: "Trebuchet MS";
 }
-span, li, a {
+.pricing__content span, li, a {
     display: block;
 }
 
