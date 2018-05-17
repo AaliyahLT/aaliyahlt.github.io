@@ -1,0 +1,328 @@
+body {
+    text-align: center;
+    font-family: "Trebuchet MS", serif;
+}
+
+.landing__container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/***************PRICING SECTION***************/
+span, li, a {
+    display: block;
+}
+
+.title_section {
+    font-size: 34px;
+    color: #41525c;
+}
+
+.pricing__container_standard,
+.pricing__container_best-value,
+.pricing__container_ultimate {
+    width: 296px;
+    margin: 0 auto;
+    border: 1px solid #e8eaec;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+}
+
+.pricing__container_standard {
+    left: 9px;
+}
+
+.pricing__container_ultimate {
+    right: 9px;
+}
+
+.pricing__container_best-value {
+    box-shadow: 0 0 3px 2px #cbe2ef;
+    border: 4px solid #ec8136;
+    z-index: 2;
+    padding-bottom: 10px;
+}
+
+.pricing__container_standard,
+.pricing__container_best-value,
+.pricing__container_ultimate,
+a[class^="enroll"]
+{
+    border-radius: 3px;
+}
+
+.pricing__header, a {
+    color: white;
+}
+
+.pricing__header {
+    padding: 20px 0;
+}
+
+.pricing__container_best-value .pricing__header {
+    padding: 25px 0;
+}
+
+.pricing__container_standard .pricing__header,
+.pricing__container_ultimate .pricing__header {
+    border-radius: 3px 3px 0 0;
+}
+
+.pricing__container_standard .pricing__header {
+    background: #37c2d3;
+}
+
+.pricing__container_best-value .pricing__header {
+    background: #ec8136;
+}
+
+.pricing__container_ultimate .pricing__header {
+    background: #1cb79a;
+}
+
+.pricing__header span,
+.pricing__content_iconic
+{
+    font-size: 30px;
+}
+
+.pricing__content {
+    padding: 20px 14px;
+}
+
+.pricing__content_iconic {
+    color: #3f4042;
+    margin-bottom: 20px;
+}
+
+.pricing__content_price {
+    color: #35495a;
+    font-size: 96px;
+    margin-bottom: 20px;
+    position: relative;
+    left: -10%;
+}
+
+.pricing__content_price:before {
+    content: "$";
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    margin-left: -30px;
+}
+
+.pricing__content_price:after {
+    content: "Monthly";
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    margin-left: -10px;
+}
+
+.pricing__content ul {
+    box-sizing: border-box;
+    width: 260px;
+    list-style: none;
+    text-align: left;
+    color: #888c94;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+.pricing__content ul li:nth-of-type(odd) { /*нечетные*/
+    background: #eef5fc;
+}
+
+.pricing__content ul li:nth-of-type(even) {
+    background: #f5f5f6;
+}
+
+.pricing__content ul li {
+    padding-left: 60px;
+    height: 32px;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.pricing__content ul li:before {
+    content: " ";
+    display: inline-block;
+    background: url("../img/mark.png") center;
+    position: absolute;
+    margin: 4px 0 0 -35px;
+    width: 14px;
+    height: 15px;
+}
+
+.enroll-blue,
+.enroll-orange {
+    width: 252px;
+    margin: 0 auto;
+    padding: 14px 0;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.enroll-blue {
+    background: #3371a6;
+    box-shadow: 0 2px 1px 0 #16436a;
+}
+
+.pricing__container_best-value a {
+    background: #ec8136;
+    box-shadow: 0 2px 1px 0 #b1561b;
+}
+
+a:hover, a:active {
+    cursor: hand;
+}
+
+.pricing__container_best-value a:hover,
+.pricing__container_best-value a:active
+{
+    box-shadow: inset 0 0 3px 2px #b1561b;
+    background: rgba(236,129,54,0.9);
+}
+
+.enroll-blue:hover,
+.enroll-blue:active {
+    box-shadow: inset 0 0 3px 2px #16436a;
+    background: rgba(51,113,166,0.9);
+}
+
+/***************TESTIMONIALS SECTION***************/
+.testimonials__main_container {
+    width: inherit;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 70px 20px;
+    background: url("../img/bg_full.jpg");
+    background-size: 100%;
+    font-family: "Trebuchet MS", serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.testimonials__main_title {
+    text-align: center;
+    font-size: 40px;
+    color: #3170a8;
+}
+
+.testimonials__main_title span {
+    color: #ee8129;
+}
+
+.testimonials__contents_container {
+    width: 1065px;
+    margin: 0 auto;
+}
+
+.testimonials__content {
+    width: 490px; height: 98px;
+    display: inline-block;
+    margin: 50px 20px 0;
+    position: relative;
+}
+
+.testimonials__photo_client {
+    width: 99px;
+    height: 98px;
+    margin-right: 26px;
+}
+
+.testimonials__testimonial_area {
+    box-sizing: border-box;
+    width: 364px;
+    height: 100%;
+    font-size: 14px;
+    display: inline-block;
+    background: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: 0;
+    padding: 14px;
+}
+
+/* Draw the left triangle
+    to make the border use the before and after pseudoelements
+    with different colors, sizes and positions
+*/
+
+.testimonials__testimonial_area:before,
+.testimonials__testimonial_area:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.testimonials__testimonial_area:before {
+    top: 35%; /* 35% of height .photo__client */
+    margin-left: -31px;
+    border-width: 13px 17px 13px 0;
+    border-color: transparent #e0e0e0 transparent transparent;
+}
+
+.testimonials__testimonial_area:after {
+    top: 36%; /* 36% of height .photo__client */
+    margin-left: -30px;
+    border-width: 12px 16px 12px 0;
+    border-color: transparent #f7f7f7 transparent transparent;
+    z-index:1;
+}
+
+.testimonials__testimonial_header {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #3070a8;
+    font-style: italic;
+    border-bottom: 1px dashed #666;
+}
+
+.testimonials__client_name,
+.testimonials__client_status {
+    padding-bottom: 5px;
+}
+
+.testimonials__client_name {
+    width: 60%;
+    float: left;
+}
+
+.testimonials__client_name:before {
+    content: "-"; margin-right: 5px;
+}
+
+.testimonials__client_status {
+    float: right;
+}
+
+/* clear the floats */
+.testimonials__testimonial_header:after {
+    clear:both;
+    content:"";
+    display:block;
+}
+
+/*И для ie7*/
+.clear {
+    zoom: 1;
+}
+
+.testimonials__client_name,
+.testimonials__testimonial_text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.testimonials__testimonial_text {
+    color: #666;
+    height: 75px;
+}
