@@ -1,5 +1,4 @@
 body {
-    text-align: center;
     font-family: "Trebuchet MS", serif;
 }
 
@@ -7,10 +6,79 @@ body {
     width: 1400px;
     margin: 0 auto;
 }
+/***************HEADER SECTION***************/
+.landing__header {
+    /*height: 116px;*/
+}
+
+.landing__company_name,
+.landing__header_menu {
+    box-sizing: border-box;
+    height: 116px;
+}
+
+.landing__company_name {
+    width: 45%;
+    padding: 35px 0;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ee8129;
+
+    float: left;
+}
+
+.landing__company_name span {
+    color: #3070a8;
+    text-transform: uppercase;
+}
+
+.landing__header_menu {
+    width: 55%;
+    /*padding: 0;*/
+    font-size: 14px;
+
+    float: right;
+}
+
+.landing__header_menu ul {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+.landing__header_menu li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.landing__header_menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #989898;
+    padding: 57px 20px 38px;
+    text-align: center;
+}
+
+.landing__header_menu ul li a:hover,
+.landing__header_menu ul li a:active {
+    border-bottom: 4px solid #3070a8;
+    color: #3070a8;
+}
+
+.landing__header:after {
+    clear:both;
+    content:"";
+    display:block;
+}
 
 /***************PRICING SECTION***************/
-span, li, a {
+.pricing__content span, .pricing__content  li, .pricing__content  a {
     display: block;
+}
+
+.landing__pricing {
+    text-align: center;
 }
 
 .title_section {
@@ -52,7 +120,7 @@ a[class^="enroll"]
     border-radius: 3px;
 }
 
-.pricing__header, a {
+.pricing__header, .pricing__content  a {
     color: white;
 }
 
@@ -222,7 +290,8 @@ h1 {
 }
 
 .testimonials__content {
-    width: 490px; height: 98px;
+    width: 490px;
+    height: 98px;
     display: inline-block;
     margin: 50px 20px 0;
     position: relative;
