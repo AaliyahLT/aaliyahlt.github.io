@@ -124,11 +124,17 @@ body {
 
 .landing__pricing {
     text-align: center;
+    padding: 70px 0;
 }
 
 .title_section {
-    font-size: 34px;
+    font-size: 30px;
     color: #41525c;
+    text-transform: uppercase;
+}
+
+.landing__pricing .title_section {
+    margin-bottom: 50px;
 }
 
 .pricing__container_standard,
@@ -171,6 +177,7 @@ a[class^="enroll"]
 
 .pricing__header {
     padding: 20px 0;
+    font-weight: bold;
 }
 
 .pricing__container_best-value .pricing__header {
@@ -197,7 +204,7 @@ a[class^="enroll"]
 .pricing__header span,
 .pricing__content_iconic
 {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .pricing__content {
@@ -209,28 +216,35 @@ a[class^="enroll"]
     margin-bottom: 20px;
 }
 
+.pricing__content_iconic,
+.enroll-blue,
+.enroll-orange {
+    text-transform: uppercase;
+}
+
 .pricing__content_price {
     color: #35495a;
-    font-size: 96px;
+    font-size: 72px;
+    font-weight: bold;
     margin-bottom: 20px;
     position: relative;
-    left: -10%;
+    left: -5%;
 }
 
 .pricing__content_price:before {
     content: "$";
-    font-size: 48px;
+    font-size: 36px;
     position: absolute;
     top: 0;
-    margin-left: -30px;
+    margin-left: -20px; margin-top: -10px;
 }
 
 .pricing__content_price:after {
     content: "Monthly";
-    font-size: 24px;
+    font-size: 18px;
     position: absolute;
     bottom: 0;
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 .pricing__content ul {
@@ -239,7 +253,7 @@ a[class^="enroll"]
     list-style: none;
     text-align: left;
     color: #888c94;
-    font-size: 18px;
+    font-size: 15px;
     padding-left: 0;
 }
 
@@ -273,7 +287,7 @@ a[class^="enroll"]
     width: 252px;
     margin: 0 auto;
     padding: 14px 0;
-    font-size: 19px;
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -309,10 +323,10 @@ a:hover, a:active {
     width: inherit;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 50px 70px 20px;
+    padding: 60px 70px 80px;
     background: url("../img/bg_full.jpg");
     background-size: 100%;
-    font-family: "Trebuchet MS", serif;
+    /*font-family: "Trebuchet MS", serif;*/
 }
 
 h1 {
@@ -352,7 +366,7 @@ h1 {
     box-sizing: border-box;
     width: 364px;
     height: 100%;
-    font-size: 14px;
+    font-size: 13px;
     display: inline-block;
     background: #f7f7f7;
     border: 1px solid #e0e0e0;
@@ -396,6 +410,7 @@ h1 {
     margin-bottom: 10px;
     color: #3070a8;
     font-style: italic;
+    font-weight: bolder;
     border-bottom: 1px dashed #666;
 }
 
