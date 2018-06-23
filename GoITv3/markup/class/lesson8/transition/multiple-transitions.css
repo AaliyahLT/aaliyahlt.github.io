@@ -1,0 +1,38 @@
+/*
+	если не пользоваться препроцесорами
+	или клиентскими скриптами, то код
+	выглядит примерно так :(
+
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 2s;
+
+	-o-transition-property: background-color;
+	-o-transition-duration: 2s;
+
+	-moz-transition-property: background-color;
+	-moz-transition-duration: 2s;
+
+	transition-property: background-color;
+	transition-duration: 2s;
+*/
+/*
+	Если нужно анимировать несколько свойств,
+	то можно их группировать через запятую
+
+	transition-property: background-color, left;
+	transition-duration: 2s, 1s;
+
+	или
+*/
+
+div {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    transition: margin 0.2s linear, background-color 0.2s linear;
+}
+
+div:hover {
+    background-color: black;
+    margin-left: 150px;
+}
