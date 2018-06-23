@@ -36,7 +36,15 @@ div {
 	  skew(Xdeg,Ydeg)
 	    skewX(Xdeg), skewY(Ydeg)
     */
+    /*
+    с помощью transition можно делать плавный transform
+    */
+    transition: transform 1s linear;
 
+}
+
+div:hover {
     -transform: translate(20px,40px);
-    /*translate(20px,40px) scale(0.75, 1.25) rotate(45deg) skew(25deg,15deg)*/
+    transform: translate(20px,40px) scale(0.75, 1.25) rotate(45deg) skew(25deg,15deg);
+
 }
