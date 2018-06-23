@@ -1,0 +1,18 @@
+/* свойство transition-delay позволяет
+    делать задержку перед началом анимации
+*/
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 6px solid orange;
+    /*transition: margin-left 0.5s linear, margin-top 0.5s linear;
+    transition-delay: 0s, 0.5s;*/
+    /* можно склеить все */
+    transition: margin-left 0.5s linear, margin-top 0.5s linear 0.5s;
+}
+
+div:hover {
+    margin-left: 30px;
+    margin-top: 30px;
+}
