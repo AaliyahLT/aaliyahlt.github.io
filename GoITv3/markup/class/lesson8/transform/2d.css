@@ -1,0 +1,61 @@
+body {
+    margin: 40px;
+}
+
+.demo2d {
+    height: 300px;
+}
+
+.demo2d .demo2d__demo {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: #fc0;
+    opacity: .5;
+    cursor: pointer;
+    -webkit-transition: all linear 0.3s;
+}
+
+.demo2d:hover .demo2d__demo_pos_t {
+    z-index: 4;
+    margin-left: 30px;
+    -webkit-transform: rotate(-30deg) skew(0deg,30deg) scale(1.5);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(.24, rgb(212,85,0)), color-stop(.62, rgb(250,164,15)), color-stop(1, rgb(245,231,215)));
+}
+
+.demo2d:hover .demo2d__demo_pos_b {
+    z-index: 1;
+    margin-top: 55px;
+    margin-left: 30px;
+    -webkit-transform: rotate(-30deg) skew(0deg, 30deg) scale(1.5);
+    background: rgb(250,164,15);
+}
+
+.demo2d:hover .demo2d__demo_pos_l,
+.demo2d:hover .demo2d__demo_pos_r {
+    z-index: 2;
+    margin-top: 27px;
+    margin-left: -35px;
+    -webkit-transform: skew(0deg, 60deg) scale(.75);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(.24, rgb(212,85,0)), color-stop(.62, rgb(250,164,15)), color-stop(1, rgb(245,231,215)));
+}
+
+.demo2d:hover .demo2d__demo_pos_r {
+    margin-left: 94px;
+}
+
+.demo2d:hover .demo2d__demo_pos_f,
+.demo2d:hover .demo2d__demo_pos_z {
+    z-index: 4;
+    margin-top: 86px;
+    margin-left: 30px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(1.738, 0.735);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(1, rgb(212,85,0)), color-stop(.62, rgb(250,164,15)), color-stop(1, rgb(245,231,215)));
+}
+
+.demo2d:hover .demo2d__demo_pos_z {
+    z-index: 1;
+    margin-top: -11px;
+    margin-left: -25px;
+}
