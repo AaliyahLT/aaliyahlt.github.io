@@ -1,0 +1,46 @@
+body {
+    font-size: 31px;
+}
+
+label {
+    font-size: 16px;
+}
+
+@keyframes anim_pause {
+    from {
+        margin-left: 0;
+    }
+    90% {
+        margin-left: 110px;
+    }
+    to {
+        margin-left: 100px;}
+}
+
+@keyframes anim_pause2 {
+    from {
+        color: #000;
+        opacity: 1;
+    }
+    90% {
+        color: #fff;
+        opacity:.5;
+    }
+    to {
+        color: #060;
+        opacity:1;
+    }
+}
+
+div {
+    transition: all 1.75s;
+}
+
+input[id="a"]:checked ~ div {
+    animation: .75s anim_pause infinite, .75s anim_pause2 infinite;
+    color: #060;
+}
+
+input[id="b"]:checked ~ div {
+    animation-play-state: paused;
+}
