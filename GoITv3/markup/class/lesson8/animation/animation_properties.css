@@ -1,0 +1,24 @@
+body {
+    font-size: 31px;
+}
+
+@keyframes my_custom_name {
+    from { margin-left: 0; }
+    50% { margin-left: 140px; }
+    80% { margin-left: 50px; }
+    to { margin-left: 100px; }
+}
+
+div {
+    /* вызов аниации по имени*/
+    animation-name: my_custom_name;
+    animation-duration: 1.75s;
+
+    /* параметр: количество итераций */
+    /* бесконечно: infinite */
+    -animation-iteration-count: 3;
+    /* параметр: анимировать ли
+   в обратную сторону */
+    animation-direction: reverse;
+    /*try: reverse */
+}
