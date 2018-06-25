@@ -1,0 +1,28 @@
+body {
+    font-size: 31px;
+}
+
+/*
+	использование анимаций
+	делится на 2 части
+
+	1. Создание последовательности
+	   и имени анимации с помощью
+	   правила @keyframes
+
+	2. Непосредственно использование
+	   и параметризация этой анимации
+*/
+
+@keyframes my-custom-name {
+    /* from, to = 0%, 100%*/
+
+    from { margin-left: 0; }
+    50% { margin-left: 140px; }
+    80% { margin-left: 50px; }
+    to { margin-left: 170px; }
+}
+
+div:hover {
+    animation: 1.75s my-custom-name;
+}
