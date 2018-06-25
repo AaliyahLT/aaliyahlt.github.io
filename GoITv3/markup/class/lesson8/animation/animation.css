@@ -3,6 +3,11 @@ body {
 }
 
 /*
+The animation property is a shorthand property for eight of the animation properties
+Синтаксис:
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+*/
+/*
 	использование анимаций
 	делится на 2 части
 
