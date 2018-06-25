@@ -1,0 +1,55 @@
+body {
+    font-size: 31px;
+}
+
+label {
+    font-size: 16px;
+}
+
+@keyframes anim_end {
+    from {
+        margin-left: 0;
+    }
+    90% {
+        margin-left: 110px;
+    }
+    to {
+        margin-left: 100px;
+    }
+}
+
+@keyframes anim_end2 {
+    from {
+        color: #000;
+        opacity:1;
+    }
+    90% {
+        color: #fff;
+        opacity: .6;
+    }
+    to {
+        color: #060;
+        opacity:1;
+    }
+}
+
+input[id="a"]:checked ~ div {
+    animation: .75s anim_end, .75s anim_end2;
+    color: #060;
+}
+
+/*
+	forwards:
+	  застынет на поледнем кадре
+
+	backwards:
+	  применит первый кадр
+	  потом подождет animation-delay
+	  и начнет анимацию
+
+	both:
+	  оба два :)
+*/
+input[id="b"]:checked ~ div {
+    animation-fill-mode: both;
+}
