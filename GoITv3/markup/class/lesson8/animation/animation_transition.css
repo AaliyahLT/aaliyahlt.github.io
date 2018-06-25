@@ -1,0 +1,25 @@
+body {
+    font-size: 31px;
+}
+
+label {
+    font-size: 16px;
+}
+
+@keyframes anim_trans {
+    from { margin-left: 0;}
+    90% { margin-left: 110px;}
+    to { margin-left: 100px;}
+}
+
+div {
+    transition:  margin-left .75s;
+}
+
+input:checked ~ div {
+    animation: .75s anim_trans;
+    /*
+	мы выставим это значение равной длине анимации
+*/
+    margin-left: 100px;
+}
