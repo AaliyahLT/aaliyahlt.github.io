@@ -1,0 +1,39 @@
+body {
+    font-size: 31px;
+}
+
+label {
+    font-size: 16px;
+}
+
+@keyframes multi_animation {
+    from { margin-left: 0;}
+    90% { margin-left: 110px;}
+    to { margin-left: 100px;}
+}
+/* две анимации*/
+
+@keyframes multi_animation2 {
+    from {
+        color: #000;
+        opacity: 1;
+    }
+    90% {
+        color: #fff;
+        opacity: .3;
+    }
+    to {
+        color: #060;
+        opacity: 1;
+    }
+}
+
+div {
+    transition: all .75s 0s;
+}
+
+input:checked ~ div {
+    animation: .75s multi_animation, .75s multi_animation2;
+    margin-left: 100px;
+    color: #060;
+}
