@@ -1,0 +1,12 @@
+.frame {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    opacity: .5;
+    transition: all .75s linear;
+    /*включаем поддержку 3d*/
+    transform-style: preserve-3d;
+}
+input:checked ~ .frame {
+    transform: rotateY(180deg);
+}
