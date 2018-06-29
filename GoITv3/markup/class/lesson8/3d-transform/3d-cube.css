@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+}
+/* Cube (begin)*/
+
+.b-cube {
+    height: 700px;
+    perspective: 800;
+    /* For compatibility with iPhone 3.0, we leave off the units here */
+    /*
+    Смещается точка изменения перспективы
+    50% середина по ширине и
+    225px это подобранное значение,
+    чтобы выровнять общую перспективу таким образом,
+    чтобы мы смотрели на куб и кольцо "на уровне глаз"
+*/
+    perspective-origin: 50% 225px;
+    background: #000;
+}
+
+.b-cube__stage {
+    width: 100%;
+    height: 500px;
+    /*
+          transition: transform 0.5s;
+          нужно для плавного отдаления по оси Z ,
+          которое добавляется при переключении на "кольцо"
+    */
+    transition: transform .5s;
+    /*
+            это указывает, что отдаляться надо 3D простарнстве
+        */
+    transform-style: preserve-3d;
+}
+
+.b-cube_type_ring .b-cube__stage {
+    /* отдаляемся*/
+
+    transform: translateZ(-200px);
+}
+
+.b-cube__shape {
+    position: relative;
+    top: 160px;
+    margin: 0 auto;
+    background: red;
+    height: 200px;
+    width: 200px;
+    /* этот парент пластинок, который будет вращяться вокруг своей оси*/
+    transform-style: preserve-3d;
+    /*
+            тут указываем название анимации, которое потом будет использовано для настройки
+            infinite -- количество итераций = бесконечно
+            и linear тип анимауии, такой же как в transition-timing-function
+        */
+
+    animation: spin 8s infinite linear;
+}
+/*
+        @keyframes %имя анимции% позволяет настроить ключевые кадры.
+        в данном примере это от начала и до конца, но можно в середину вставить промежуточные кадры,
+        это позволит ускорить или замедлить начало и конец анимации или применить другие трансформации
+     */
+@keyframes spin {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+       transform: rotateY(-360deg);
+    }
+}
+
+.b-cube__plane {
+    font-family: Times, serif;
+    font-size: 124pt;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    color: black;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgb(184,225,255)), color-stop(0.71, rgb(115,169,250)), color-stop(1, rgb(18,96,252)));
+    opacity: .6;
+    /*
+            Тут мы говорим пластинкам, что анимировать
+            надо трансформацию за 2 секунды и
+            прозрачность тоже за 2 секунды
+         */
+    transition: transform 2s, opacity 2s;
+    /*
+            Эта штука говорит рендерить или нет то что
+            находится вне поля видимости, мы рендерим,
+            так как у нас пластинки полупрозрачные
+         */
+    backface-visibility: visible;
+}
+
+.b-cube_type_cube .b-cube__plane_n_1 {
+     opacity: .5;
+     /*
+        Трансформируем пластинки: увеличиваем пластины внешнего куба и вращаем в нужной плоскости,
+        а также раздвигаем их от центра вращения, чтобы они нарисовали куб
+     */
+     transform: scale3d(1.2,1.2,1.2) rotateX(90deg) translateZ(100px);
+ }
+
+.b-cube_type_cube .b-cube__plane_n_2 {
+    opacity: .5;
+    transform: scale3d(1.2,1.2,1.2) translateZ(100px);
+}
+
+.b-cube_type_cube .b-cube__plane_n_3 {
+    opacity: .5;
+    transform: scale3d(1.2,1.2,1.2) rotateY(90deg) translateZ(100px);
+}
+
+.b-cube_type_cube .b-cube__plane_n_4 {
+    opacity: .5;
+    transform: scale3d(1.2,1.2,1.2) rotateY(180deg) translateZ(100px);
+}
+
+.b-cube_type_cube .b-cube__plane_n_5 {
+    opacity: .5;
+    transform: scale3d(1.2,1.2,1.2) rotateY(-90deg) translateZ(100px);
+}
+
+.b-cube_type_cube .b-cube__plane_n_6 {
+    opacity: .5;
+    transform: scale3d(1.2,1.2,1.2) rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
+
+.b-cube_type_cube .b-cube__plane_n_7 {
+    transform: scale3d(.8,.8,.8) rotateX(90deg) translateZ(100px) rotate(180deg);
+}
+
+.b-cube_type_cube .b-cube__plane_n_8 {
+    transform: scale3d(.8,.8,.8) translateZ(100px);
+}
+
+.b-cube_type_cube .b-cube__plane_n_9 {
+    transform: scale3d(.8,.8,.8) rotateY(90deg) translateZ(100px);
+}
+
+.b-cube_type_cube .b-cube__plane_n_10 {
+    transform: scale3d(.8,.8,.8) rotateY(180deg) translateZ(100px);
+}
+
+.b-cube_type_cube .b-cube__plane_n_11 {
+    transform: scale3d(.8,.8,.8) rotateY(-90deg) translateZ(100px);
+}
+
+.b-cube_type_cube .b-cube__plane_n_12 {
+    transform: scale3d(.8,.8,.8) rotateX(-90deg) translateZ(100px);
+}
+
+/* ---------- ring styles ------------- */
+
+.b-cube_type_ring .b-cube__plane_n_1 {
+    transform: translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_2 {
+    transform: rotateY(30deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_3 {
+    transform: rotateY(60deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_4 {
+    transform: rotateY(90deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_5 {
+    transform: rotateY(120deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_6 {
+    transform: rotateY(150deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_7 {
+    transform: rotateY(180deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_8 {
+    transform: rotateY(210deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_9 {
+    transform: rotateY(-120deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_10 {
+    transform: rotateY(-90deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_11 {
+    transform: rotateY(300deg) translateZ(373px);
+}
+
+.b-cube_type_ring .b-cube__plane_n_12 {
+    transform: rotateY(330deg) translateZ(373px);
+}
+/* Cube (end) */
