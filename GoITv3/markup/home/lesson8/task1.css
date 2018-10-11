@@ -1,4 +1,37 @@
+.home-arrow__search-wrapper {
+    width: 100%;
+}
 
+.home-arrow__search {
+    padding: 5px 12px 5px 4px;
+    background: #ffcc66;
+    box-sizing: border-box;
+}
+
+.search2_input, .search2__button {
+    display: inline-block;
+    margin-right: 4px;
+    height: 26px;
+}
+
+.input__input, .button {
+    border: 1px solid gray;
+    border-radius: 1px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.search2_input {
+    width: 70%;
+    min-width: 280px;
+}
+
+.input__input {
+    width: 100%;
+}
+
+.search2__button > .button {
+    width: 70px;
+}
 
 
 /*
