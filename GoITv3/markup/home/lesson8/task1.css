@@ -1,5 +1,6 @@
 .home-arrow__search-wrapper {
-    width: 90%;
+    /*width: 90%;*/
+    width: 400px;
     min-width: 400px;
     position: absolute;
 }
@@ -24,7 +25,7 @@
 
 .search2_input, .search2__button {
     display: table-cell;
-    margin-right: 4px;
+    /*margin-right: 4px;*/
     height: 26px;
 }
 
@@ -45,75 +46,24 @@
     padding-left: 5px;
 }
 
-.input__input:focus {
-    background: #ffffaa;
-    -border: 1px solid gray;
-}
-
 .search2__button {
 
+    -border-radius: 1px;
+    -box-shadow:  0 0 40px rgba(0, 0, 0, .1) inset;
 }
 
 .button {
-    -width: 100%;
+
     width: 70px;
-    -box-shadow: inset 0 0 3px 1px grey;
-    -border-radius: 2px;
+    padding:0;
+    box-shadow:  0 0 40px rgba(0, 0, 0, .1);
+    -border-radius: 1px;
 }
 
-/*
-.search_container {
-
-    !*min-width: 280px;*!
-}
-
-.search_arrow {
-    max-width: 545px;
-    min-width: 280px;
-    padding: 5px 0 5px 4px;
-    background: #ffcc66;
-    !*height: 54px;*!
-    box-sizing: border-box;
-    !*position: relative;*!
-}
-
-.search_arrow:after {
-    content: "";
-    width: 0;
-    height: 0;
-    margin: -1px 0 0 99px;
-    border-style: solid;
-    border-width: 27px 0 27px 13px;
-    border-color: transparent transparent transparent #3070a8;
-    position: absolute;
-}
-
-.search_text-field {
-    max-width: 457px;
-    min-width: 280px;
-}
-
-.search_check input[type="checkbox"]{
+.search_check {
     margin: 0;
 }
 
-.test {
-    width: 100px;
-    height: 54px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    background: gray;
-    !*position: relative;*!
-}
+.search_check > label {
 
-.test:after {
-    content: "";
-    width: 0;
-    height: 0;
-    margin: -1px 0 0 99px;
-    border-style: solid;
-    border-width: 27px 0 27px 13px;
-    border-color: transparent transparent transparent #007bff;
-    position: absolute;
 }
-*/
