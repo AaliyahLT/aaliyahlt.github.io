@@ -145,7 +145,12 @@ body {
 
 .services__column_header {
     color: #3070a8;
+    font-size: 30px;
     margin: 30px 0 30px;
+}
+.services__column_content {
+    font-size: 14px;
+    line-height: 1.8;
 }
 
 /***************PRICING SECTION***************/
