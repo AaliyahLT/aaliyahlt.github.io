@@ -1,6 +1,6 @@
 .home-arrow__search-wrapper {
-    /*width: 90%;*/
-    width: 400px;
+    width: 90%;
+    /*width: 400px;*/
     min-width: 400px;
     position: absolute;
 }
