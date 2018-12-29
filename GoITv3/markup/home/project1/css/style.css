@@ -153,6 +153,46 @@ body {
     line-height: 1.8;
 }
 
+/***************MIDDLE SECTION***************/
+.landing__middle_content_section {
+    box-sizing: border-box;
+    padding: 80px 190px;
+    width: 1400px;
+    height: 575px;
+    background: url("../img/middle-section_main-image.jpg") no-repeat #2e4f68
+}
+
+.middle_content__container { box-sizing: border-box;
+    width: 680px;
+    line-height: 1.8;
+}
+
+.middle_content__container > p,
+.middle_content__container > ul > li:nth-of-type(even) {
+    margin: 15px 0;
+}
+
+.middle_content__header {
+    font-size: 26px;
+    color: #ee8129;
+}
+
+.middle_content__container > p:nth-of-type(2) {
+    font-size: 19px;
+    font-style: italic;
+    color: #fff;
+}
+
+.middle_content__container > ul {
+    list-style-type: disc;
+    font-size: 14px;
+    color: #9d9d9d;
+}
+
+.middle_content__container > ul > li:nth-of-type(even) {
+    color: #3070a8;
+}
+
 /***************PRICING SECTION***************/
 .pricing__content span, .pricing__content  li, .pricing__content  a {
     display: block;
