@@ -1,0 +1,6 @@
+/*почему-то не работает*/
+body
+{
+    background-image: cross-fade(50% url(http://lorempixel.com/400/200/), url(http://lorempixel.com/400/200/));
+    background-repeat: no-repeat;
+}

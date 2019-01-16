@@ -1,0 +1,11 @@
+body {
+    font-size: 41px;
+}
+
+div {
+    color: transparent;
+    background: url(http://lorempixel.com/200/152/);
+
+    /* любой фон виден только у текста */
+    -webkit-background-clip: text;
+}

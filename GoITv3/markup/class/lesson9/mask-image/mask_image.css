@@ -1,0 +1,7 @@
+.buy-a-puppy {
+    width: 1000px;
+    height: 1000px;
+    background-size: 100% 100%;
+    -webkit-mask: url(http://clipartist.net/openclipart.org/2013/March/MarriageEquality_RedEqual/heart_google_twitter_header_google_tweet_youtube_marriage_equality_marriage_equality_i_support_love_red_equal-999px.png)
+    no-repeat 50%;
+}

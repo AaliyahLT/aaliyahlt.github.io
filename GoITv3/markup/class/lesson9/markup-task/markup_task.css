@@ -1,0 +1,74 @@
+.wrapper {
+    /*width: 100%;*/
+    margin: 30px 50px;
+}
+
+.row__content {
+    /*background: #0f0;*/
+    font-family: 'Myriad Pro', Arial, sans-serif;
+    vertical-align: top;
+}
+
+.content__item {
+    display: inline-block;
+
+    width: 50%;
+    min-height: 85px;
+
+    vertical-align: top;
+
+    margin-bottom: 30px;
+}
+
+.container__content {
+
+    position: relative;
+    vertical-align: top;
+    /*background: gold;*/
+}
+
+.content__item:nth-child(odd) .container__content{
+    margin: 0 20px 0 0;
+}
+
+.content__item:nth-child(even) .container__content{
+    margin: 0 0 0 20px;
+}
+
+.content_image {
+    border-radius: 5px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header, .text {
+    margin: 0 0 5px 115px;
+}
+
+.header {
+    font-size: 22px;
+    color: #637f83;
+}
+
+.text {
+    font-size: 14px;
+    color: #959595;
+
+    /*position: relative;*/ /*for AFTER pseudoelement*/
+    /*display: block;*/
+    overflow: hidden;
+    max-height: 4.2em; /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.4em;
+}
+
+/*.text:after {
+    content: "+ more";
+    font-size: 14px;
+    color: #e4551d;
+    position: absolute;
+    padding-left: 10px;
+    right: -20px;
+    bottom: 1px;
+}*/

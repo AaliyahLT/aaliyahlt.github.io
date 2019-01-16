@@ -1,0 +1,9 @@
+body {
+    background: #000;
+}
+
+.buy-a-puppy {
+    width: 300px;
+    /*-webkit-box-reflect: below 0 -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 13%, rgba(255, 255, 255, 0) 25%);*/
+    -webkit-box-reflect: below 0;
+}

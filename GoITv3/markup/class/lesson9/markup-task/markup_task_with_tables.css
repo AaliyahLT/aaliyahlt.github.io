@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    /*margin: 30px 50px;*/
+    font: 14px Arial;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container__content {
+    table-layout: fixed; /* Фиксированная ширина ячеек */
+    width: 100%;
+    font-size: 0;
+    /*margin: 0 -40px 30px 0;*/
+    /*background: #0f0;*/
+    border-spacing: 40px 30px;
+}
+.coln {width: 50%}
+
+.content_content {
+    height: 85px;
+    /*background: gold;*/
+}
+
+.content_image {
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.content_header {
+    margin: 0 0 5px;
+    font-size: 22px;
+    color: #637f83;
+}
+
+.content_text {
+    margin: 0;
+    font-size: 14px;
+    color: #959595;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    max-height: 4.2em; /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.4em;
+    /*text-align:justify;*/
+}
+
+.content_text:after {
+    content: "+ more";
+    font-size: 14px;
+    color: #e4551d;
+    position: absolute;
+    padding-left: 10px;
+    right: -20px;
+    bottom: 1px;
+}
+
