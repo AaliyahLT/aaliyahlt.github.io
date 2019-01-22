@@ -574,6 +574,21 @@ h1 {
 }
 
 .landing__footer_copyright {
+    padding-top: 20px;
     height: 104px;
     background-color: #3070a8;
+
+    text-align: center;
+    line-height: 20px;
+    color: white;
+
+}
+
+.footer_company_name,
+.footer__designed {
+    font-weight: bolder;
+}
+
+.footer__designed {
+    color: #1d1c1c;
 }
