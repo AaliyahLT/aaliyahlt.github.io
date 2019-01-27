@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+.portfolio__wrapper {
+    width: 100%;
+    margin: 50px 0 108px;
+
+    font-family: 'Lato', sans-serif;
+
+    text-align: center;
+}
+
+.portfolio__text_content {
+    margin-bottom: 80px;
+    letter-spacing: 5px;
+    /*text-align: center;*/
+}
+
+h1 {
+    margin: 0 0 22px;
+
+    color: #2d3950;
+    size: 41px;
+}
+
+.portfolio__text_content p {
+    margin: 0;
+    color: #909090;
+    size: 15px;
+}
+
+.portfolio__photo_content {
+    background: #37c2d3;
+
+    width: 100%;
+    max-width: 1170px;
+    /*width: 1170px;*/
+    margin: 0 auto;
+}
+
+.photo_content {
+    background: #ec8136;
+
+    margin: 0 15px 30px;
+    /*width: calc(100%/3 - 30px);*/
+    width: 360px;
+    /*max-height: 260px;*/
+
+    display: inline-block;
+}
+
+.photo_content_item {
+    background: #bbe774;
+
+}
+
+.container_photo {
+    background: #ee55ee;
+
+    height: 260px;
+}
+
+.container_photo img {
+    border-radius: 1px;
+}
