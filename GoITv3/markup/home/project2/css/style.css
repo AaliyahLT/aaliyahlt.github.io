@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+.portfolio__wrapper {
+    width: 100%;
+    margin: 50px 0 108px;
+
+    font-family: 'Lato', sans-serif;
+}
+
+.portfolio__text_content {
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 22px;
+
+    color: #2d3950;
+    size: 41px;
+}
+
+.portfolio__text_content p {
+    margin: 0;
+    color: #909090;
+    size: 15px;
+}
+
+.portfolio__photo_content {
+    max-width: 1170px;
+    margin: 0 auto;
+    /*vertical-align: top;*/
+    background: gold;
+}
+
+.photo_content_item {
+    /*box-sizing: border-box;*/
+    display: inline-block;
+
+    width: 33.3%;
+    max-height: 260px;
+
+    /*vertical-align: top;*/
+
+    margin: 15px 15px;
+    max-width: 360px;
+    /*width: calc(33.3% - 30px);*/
+
+}
+
+.container_photo {
+    /*position: relative;
+    vertical-align: top;*/
+
+    /*margin: 0 15px 0;*/
+}
+
+/*.photo_content_item:nth-child(odd) .container_photo {*/
+    /*margin: 0 15px 0 0;*/
+/*}*/
+
+/*.photo_content_item:nth-child(even) .container_photo {*/
+    /*margin: 0 0 0 15px;*/
+/*}*/
+
+.container_photo img {
+    border-radius: 1px;
+}
