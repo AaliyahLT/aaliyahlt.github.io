@@ -39,7 +39,7 @@ h1 {
 }
 
 .photo_content {
-    background: #ec8136;
+    /*background: #ec8136;*/
     box-sizing: border-box;
 
     margin: 0 15px 30px;
@@ -51,7 +51,7 @@ h1 {
 }
 
 .photo_content_item {
-    background: #bbe774;
+    /*background: #bbe774;*/
 
 }
 
