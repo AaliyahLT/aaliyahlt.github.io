@@ -30,7 +30,7 @@ h1 {
 }
 
 .portfolio__photo_content {
-    background: #37c2d3;
+    /*background: #37c2d3;*/
 
     width: 100%;
     max-width: 1170px;
@@ -55,11 +55,12 @@ h1 {
 }
 
 .container_photo {
-    background: #ee55ee;
+    background: #16436a;
 
     max-height: 260px;
 }
 
 .container_photo img {
-    border-radius: 1px; width: 100%; height: 100%;
+    border-radius: 1px;
+    width: 100%; height: 100%;
 }
