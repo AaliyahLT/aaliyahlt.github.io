@@ -33,16 +33,17 @@ h1 {
     /*background: #37c2d3;*/
 
     width: 100%;
-    max-width: 1170px;
+    /*max-width: 1170px;*/
     /*width: 1170px;*/
     margin: 0 auto;
 }
 
 .photo_content {
     background: #ec8136;
+    box-sizing: border-box;
 
     margin: 0 15px 30px;
-    min-width: calc(100%/3 - 30px);
+    width: calc(33.3% - 30px);
     /*width: 360px;*/
     /*max-height: 260px;*/
 
@@ -57,7 +58,7 @@ h1 {
 .container_photo {
     background: #16436a;
 
-    max-height: 260px;
+    /*max-height: 260px;*/
 }
 
 .container_photo img {
